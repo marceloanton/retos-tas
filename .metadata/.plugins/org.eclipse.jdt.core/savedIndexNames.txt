@@ -1,3 +1,0 @@
-INDEX VERSION 1.132+E:\DESARROLLO\4° Año\retos\.metadata\.plugins\org.eclipse.jdt.core
-1280701195.index
-1865797976.index

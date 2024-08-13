@@ -1,6 +1,6 @@
 ## Consideraciones Adicionales para Contribuir a los Retos Semanales
 
-¡Gracias por participar en los retos semanales de algoritmos en Java! Para asegurar una experiencia positiva y educativa, ten en cuenta las siguientes consideraciones al trabajar en tus soluciones y colaborar con otros:
+¡Gracias por participar en los retos de algoritmos en Java! Para asegurar una experiencia positiva y educativa, ten en cuenta las siguientes consideraciones al trabajar en tus soluciones y colaborar con otros:
 
 ### 1. Estructura de Carpetas y Nomenclatura
 

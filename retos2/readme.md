@@ -1,82 +1,90 @@
-## Guía para Contribuir a los Retos Semanales
 
-### Paso 1: Hacer un Fork del Repositorio
+# I.S.F.D y T. N°44 "General Las Heras"
 
-1. **Visita el Repositorio Original:**
-   * Navega al repositorio original en GitHub `https://github.com/marceloanton/retos-algoritmos-2`
-2. **Haz clic en el botón "Fork":**
-   * En la esquina superior derecha de la página del repositorio, encontrarás el botón "Fork". Haz clic en él para crear una copia del repositorio en tu cuenta de GitHub.
+# RETOS PARTE 1 / Segundo Año
 
-### Paso 2: Clonar el Fork en Tu Computadora
+## Descripción del reto N°1: Tabla Empleados
 
-1. **Copia la URL del Fork:**
-   * Ve a tu repositorio forked y copia la URL. Será algo como `https://github.com/tu-usuario/retos-algoritmos-2.git`
-2. **Clona el Repositorio en Tu Computadora:**
-   * Abre una terminal y ejecuta el siguiente comando:
+1. Crea un programa en Java que se conecte a una base de datos MySQL y cree una tabla llamada `empleados`. La tabla debe tener las siguientes columnas:
 
-     ```
-     git clone https://github.com/tu-usuario/retos-algoritmos-2.git
-     ```
-   * Esto descargará el repositorio en tu computadora.
+* `id` (INT, AUTO_INCREMENT, PRIMARY KEY)
+* `nombre` (VARCHAR(50))
+* `puesto` (VARCHAR(50))
+* `salario` (DECIMAL(10, 2))
 
-### Paso 3: Crear una Nueva Rama para Tu Solución
+### Ejemplo de Entrada/Salida esperada
 
-1. **Navega a la Carpeta del Proyecto:**
-   * Usa el comando `cd` para entrar en la carpeta del repositorio clonado:
+- Salida:
 
-     ```
-     cd retos-algoritmos-2
-     ```
-2. **Crea una Nueva Rama para el Reto de la Semana:**
-   * Reemplaza `semana-1-solucion` con el nombre adecuado para la semana correspondiente.
-   * Ejecuta el siguiente comando:
-     ```
-     git checkout -b semana-1-solucion
-     ```
-   * Esto crea una nueva rama y te cambia a ella.
+  ```java
+  Se espera que se cree la base de datos en nuestro servidor LOCAL sin errores, y con los datos dados
+  ```
 
-### Paso 4: Desarrolla Tu Solución
+#### Recursos adicionales
 
-1. **Escribe Tu Código:**
-   * Crea una subcarpeta con tu nombre o nombre de usuario de GitHub dentro de la carpeta de la semana correspondiente  `semana-1/tu-nombre/solucion.java`
-   * Escribe tu solución en el archivo `solucion.java` (o el nombre que prefieras).
+- Documentación de Java: [Mysql Documentation](https://dev.mysql.com/doc/ "MySQL")
 
-### Paso 5: Guardar y Subir Cambios
+## Descripción del reto N°2: Insertar datos en la tabla
 
-1. **Añadir Cambios al Repositorio Local:**
-   * Guarda tus cambios y añádelos al área de preparación:
+- Extiende el programa anterior para insertar al menos 3 registros en la tabla `empleados`.
 
-     ```
-     git add .
-     ```
-2. **Hacer Commit de Tus Cambios:**
-   * Realiza un commit con un mensaje descriptivo:
-     ```
-     git commit -m "Solución semana 1"
-     ```
-3. **Subir Cambios a Tu Repositorio en GitHub:**
-   * Empuja tus cambios a tu fork en GitHub:
-     ```
-     git push origin semana-1-solucion
-     ```
+### **Instrucciones:**
 
-### Paso 6: Crear un Pull Request (PR)
+1. Usa JDBC para insertar datos en la tabla `empleados`.
+2. Asegúrate de manejar las excepciones adecuadamente.
 
-1. **Dirígete al Repositorio Original en GitHub:**
-   * Abre el repositorio original y verás un mensaje que indica que has subido recientemente cambios a una rama.
-2. **Inicia un Pull Request:**
-   * Haz clic en "Compare & pull request" para iniciar el PR.
-   * Asegúrate de que estás comparando tu rama `semana-1-solucion` con la rama principal del repositorio original.
-3. **Completa los Detalles del PR:**
-   * Escribe una descripción clara de tu solución y cualquier consideración adicional.
-   * Si es necesario, proporciona instrucciones sobre cómo probar tu código.
-4. **Envíalo para Revisión:**
-   * Haz clic en "Create pull request" para enviar tu PR.
+#### Recursos Adicionales
 
-### Paso 7: Revisión y Feedback
+* Documentación de Java: [Mysql Documentation](https://dev.mysql.com/doc/ "MySQL")
 
-1. **Espera la Revisión:**
-   * Los instructores revisarán tu PR y pueden dejar comentarios o sugerencias.
-   * Responde a los comentarios y realiza cambios adicionales si es necesario.
-2. **Fusión del PR:**
-   * Una vez aprobado, tu PR será fusionado al repositorio original.
+## Descripción del reto N°3: Consultar Datos de la Tabla
+
+- Crea un programa que consulte y muestre todos los registros de la tabla `empleados`.
+
+### **Instrucciones:**
+
+1. Usa JDBC para consultar los datos de la tabla `empleados`.
+2. Muestra los datos en la consola.
+
+#### Recursos Adicionales
+
+* Documentación de Java: [Mysql Documentation](https://dev.mysql.com/doc/ "MySQL")
+
+## Descripción del reto N°4: Actualiza los registros
+
+- Crea un programa que actualice el salario de un empleado en la tabla `empleados` basado en su `id`.
+
+### **Instrucciones:**
+
+1. Usa JDBC para actualizar el registro de un empleado.
+2. Pide al usuario el `id` del empleado y el nuevo salario.
+
+#### Recursos Adicionales
+
+* Documentación de Java: [Mysql Documentation](https://dev.mysql.com/doc/ "MySQL")
+
+## Descripción del reto N°5: Eliminar un registro
+
+- Crea un programa que elimine un registro de la tabla `empleados` basado en el `id`.
+
+### **Instrucciones:**
+
+1. Usa JDBC para eliminar un registro.
+2. Pide al usuario el `id` del empleado a eliminar.
+
+#### Recursos Adicionales
+
+* Documentación de Java: [Mysql Documentation](https://dev.mysql.com/doc/ "MySQL")
+
+## Evaluación y Feedback
+
+- **Correctitud:** Tu programa debe compilarse sin errores y producir la salida esperada.
+
+* **Estilo de Código:** Asegúrate de seguir las convenciones de estilo de código Java (nombres de variables, indentación, comentarios).
+* **Comentarios:** Usa comentarios para explicar partes importantes de tu código.
+
+## Consideraciones Adicionales
+
+1. **Configuración del Entorno:** Asegúrate de tener bien configurado el driver de MySQL en tu proyecto (usualmente el archivo `mysql-connector-java.jar`), segun la version de tu MySQL Server.
+2. **Seguridad:** En proyectos reales, es recomendable usar mecanismos de seguridad para manejar las credenciales y las conexiones.
+3. **Validaciones:** Implementa validaciones para asegurar la integridad de los datos y manejar posibles errores de manera adecuada.

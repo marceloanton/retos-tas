@@ -1,83 +1,67 @@
-## Guía para Contribuir a los Retos Semanales
 
-### Paso 1: Hacer un Fork del Repositorio
+# I.S.F.D y T. N°44 "General Las Heras"
 
-1. **Visita el Repositorio Original:**
-   * Navega al repositorio original en GitHub `https://github.com/marceloanton/retos-algoritmos-3`
-2. **Haz clic en el botón "Fork":**
-   * En la esquina superior derecha de la página del repositorio, encontrarás el botón "Fork". Haz clic en él para crear una copia del repositorio en tu cuenta de GitHub.
+# RETOS PARTE 1 - Tercer Año
 
-### Paso 2: Clonar el Fork en Tu Computadora
+## Descripción del reto N°1: Gestión de Empleados con Patrón MVC
 
-1. **Copia la URL del Fork:**
-   * Ve a tu repositorio forked y copia la URL. Será algo como `https://github.com/tu-usuario/retos-algoritmos-3.git`
-2. **Clona el Repositorio en Tu Computadora:**
-   * Abre una terminal y ejecuta el siguiente comando:
+- Crea una aplicación de gestión de empleados utilizando el patrón MVC. La aplicación debe permitir agregar, ver y eliminar empleados.
 
-     ```
-     git clone https://github.com/tu-usuario/retos-algoritmos-3.git
-     ```
-   * Esto descargará el repositorio en tu computadora.
+### **Instrucciones:**
 
-### Paso 3: Crear una Nueva Rama para Tu Solución
+1. **Modelo (Model):** Clase para manejar la conexión con la base de datos y realizar operaciones CRUD.
+2. **Vista (View):** Interfaz gráfica para mostrar datos y capturar entradas del usuario.
+3. **Controlador (Controller):** Clase para gestionar la interacción entre el modelo y la vista.
 
-1. **Navega a la Carpeta del Proyecto:**
-   * Usa el comando `cd` para entrar en la carpeta del repositorio clonado:
+### **Estructura del Proyecto:**
 
-     ```
-     cd retos-algoritmos-3
-     ```
-2. **Crea una Nueva Rama para el Reto de la Semana:**
-   * Reemplaza `semana-1-solucion` con el nombre adecuado para la semana correspondiente.
-   * Ejecuta el siguiente comando:
+* **Modelo (Model):** `EmpleadoModel.java`
+* **Vista (View):** `EmpleadoView.java`
+* **Controlador (Controller):** `EmpleadoController.java`
 
-     ```
-     git checkout -b semana-3-solucion
-     ```
-   * Esto crea una nueva rama y te cambia a ella.
+## Descripción del reto N°2: Aplicación de Gestión de Productos con Interfaz Gráfica y CRUD
 
-### Paso 4: Desarrolla Tu Solución
+- Desarrolla una aplicación que permita gestionar productos en una tienda. Incluye operaciones CRUD y una interfaz gráfica para la gestión de productos.
 
-1. **Escribe Tu Código:**
-   * Crea una subcarpeta con tu nombre o nombre de usuario de GitHub dentro de la carpeta de la semana correspondiente  `semana-1/tu-nombre/solucion.java`
-   * Escribe tu solución en el archivo `solucion.java` (o el nombre que prefieras).
+**Instrucciones:**
 
-### Paso 5: Guardar y Subir Cambios
+1. **Modelo (Model):** Manejo de productos en la base de datos.
+2. **Vista (View):** Interfaz gráfica con campos para ingresar y mostrar productos.
+3. **Controlador (Controller):** Gestión de interacciones y actualizaciones entre el modelo y la vista.
 
-1. **Añadir Cambios al Repositorio Local:**
-   * Guarda tus cambios y añádelos al área de preparación:
+## Descripción del reto N°3: Aplicación de Gestión de Clientes
 
-     ```
-     git add .
-     ```
-2. **Hacer Commit de Tus Cambios:**
-   * Realiza un commit con un mensaje descriptivo:
-     ```
-     git commit -m "Solución semana 1"
-     ```
-3. **Subir Cambios a Tu Repositorio en GitHub:**
-   * Empuja tus cambios a tu fork en GitHub:
-     ```
-     git push origin semana-1-solucion
-     ```
+- Desarrolla una aplicación para gestionar clientes en una base de datos. Incluye funcionalidades para agregar, editar, eliminar y visualizar clientes.
 
-### Paso 6: Crear un Pull Request (PR)
+### **Instrucciones:**
 
-1. **Dirígete al Repositorio Original en GitHub:**
-   * Abre el repositorio original y verás un mensaje que indica que has subido recientemente cambios a una rama.
-2. **Inicia un Pull Request:**
-   * Haz clic en "Compare & pull request" para iniciar el PR.
-   * Asegúrate de que estás comparando tu rama `semana-1-solucion` con la rama principal del repositorio original.
-3. **Completa los Detalles del PR:**
-   * Escribe una descripción clara de tu solución y cualquier consideración adicional.
-   * Si es necesario, proporciona instrucciones sobre cómo probar tu código.
-4. **Envíalo para Revisión:**
-   * Haz clic en "Create pull request" para enviar tu PR.
+1. **Modelo (Model):** Gestión de clientes en la base de datos.
+2. **Vista (View):** Interfaz gráfica para la gestión de clientes.
+3. **Controlador (Controller):** Conexión entre el modelo y la vista.
 
-### Paso 7: Revisión y Feedback
+## Descripción del reto N°4: Aplicación de Gestión de Tareas
 
-1. **Espera la Revisión:**
-   * Los instructores revisarán tu PR y pueden dejar comentarios o sugerencias.
-   * Responde a los comentarios y realiza cambios adicionales si es necesario.
-2. **Fusión del PR:**
-   * Una vez aprobado, tu PR será fusionado al repositorio original.
+- Desarrolla una aplicación para gestionar tareas pendientes. Incluye funcionalidades para agregar, eliminar, marcar como completada y visualizar tareas.
+
+**Instrucciones:**
+
+1. **Modelo (Model):** Gestión de tareas en la base de datos.
+2. **Vista (View):** Interfaz gráfica para la gestión de tareas.
+3. **Controlador (Controller):** Gestión de la lógica de la aplicación.
+
+## Descripción del reto N°5: Aplicación de Gestión de Pedidos
+
+- Desarrolla una aplicación para gestionar pedidos en una tienda. Incluye funcionalidades para agregar, eliminar, actualizar y visualizar pedidos.
+
+**Instrucciones:**
+
+1. **Modelo (Model):** Manejo de pedidos en la base de datos.
+2. **Vista (View):** Interfaz gráfica para la gestión de pedidos.
+3. **Controlador (Controller):** Gestión de la lógica entre el modelo y la vista.
+
+## Evaluación y Feedback
+
+- **Correctitud:** Tu programa debe compilarse sin errores y producir la salida esperada.
+
+* **Estilo de Código:** Asegúrate de seguir las convenciones de estilo de código Java (nombres de variables, indentación, comentarios).
+* **Comentarios:** Usa comentarios para explicar partes importantes de tu código.

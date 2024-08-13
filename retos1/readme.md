@@ -1,81 +1,138 @@
-
 # I.S.F.D y T. N°44 "General Las Heras"
 
-# RETOS PARTE 1 / Segundo Año
+# RETOS SEMANA 1
 
-## Descripción del reto N°1: Tabla Empleados
+## Descripción del reto N°1: Saludo Personalizado
 
-1. Crea un programa en Java que se conecte a una base de datos MySQL y cree una tabla llamada `empleados`. La tabla debe tener las siguientes columnas:
+- Crear un programa que pida al usuario su nombre y luego salude de manera personaliada. Este ejecicio te ayudará a familiarizarte con la entrada y salida básica en java, así como con la estructura básica de un programa de Java.
 
-* `id` (INT, AUTO_INCREMENT, PRIMARY KEY)
-* `nombre` (VARCHAR(50))
-* `puesto` (VARCHAR(50))
-* `salario` (DECIMAL(10, 2))
+### Ejemplo de Entrada/Salida esperada
+
+- Entrada:
+
+  ```java
+
+  Por favor, ingrese su nombre:
+
+  Marcelo
+
+  ```
+- Salida:
+
+  ```java
+
+  Hola, Marcelo! Bienvenido/a al reto de algoritmo!
+
+  ```
+
+#### Recursos adicionales
+
+- Documentación de Java: [Clase Scanner](https://docs.oracle.com/javase/8/docs/api/java/util/Scanner.html)
+
+## Descripción del reto N°2: Calculadora Simple
+
+- Crearás un programa que actúe como una calculadora simple. El programa debe permitir al usuario realizar operaciones básicas como suma, resta, multiplicación y división.
+- Este reto te permitira practicar operaciones matemáticas básicas y manejar la entrada del usuario de manera más interactiva.
+
+### Ejemplo de Entrada/Salida esperada
+
+- Entrada:
+
+  ```
+  Selecciona una operación:
+  1. Suma
+  2. Resta
+  3. Multiplicación
+  4. División
+  1
+  Ingresa el primer número:
+  5
+  Ingresa el segundo número:
+  3
+  ```
+- Salida:
+
+  ```java
+  El resultado de la suma es:8.0
+  ```
+
+#### Recursos Adicionales
+
+* **Documentación de Java:**[Assignment, Arithmetic, and Unary Operators](https://docs.oracle.com/javase%2Ftutorial%2F/java/nutsandbolts/op1.html)
+
+## Descripción del reto N°3: Conversor de Temperatura
+
+- En este reto crearas un programa que convierta temperaturas de grados Celsius y grados Fahrenheit. El programa debe permitir al usuario ingresar una temperatura y seleccional la conversion deseada.
+
+### Ejemplo de Entrada/Salida esperada
+
+- Entrada:
+
+  Selecciona una conversión:
+
+  1. Celsius a Fahrenheit
+  2. Fahrenheit a Celsius
+
+  1
+
+  Ingresa la temperatura:
+
+  25
+- Salida:
+
+  ```java
+  25.0 grados Celsius son 77.0 grados Fahrenheit.
+  ```
+
+## Descripción del reto N°4: Tabla de Multiplicar
+
+- Crear un programa que genere e imprima una tabla de multiplicar del 1 al 10.
 
 ### Ejemplo de Entrada/Salida esperada
 
 - Salida:
 
   ```java
-  Se espera que se cree la base de datos en nuestro servidor LOCAL sin errores, y con los datos dados
+  1   2   3   4   5   6   7   8   9   10  
+  2   4   6   8   10  12  14  16  18  20  
+  3   6   9   12  15  18  21  24  27  30  
+  4   8   12  16  20  24  28  32  36  40  
+  5   10  15  20  25  30  35  40  45  50  
+  6   12  18  24  30  36  42  48  54  60  
+  7   14  21  28  35  42  49  56  63  70  
+  8   16  24  32  40  48  56  64  72  80  
+  9   18  27  36  45  54  63  72  81  90  
+  10  20  30  40  50  60  70  80  90  100
+
   ```
 
-#### Recursos adicionales
+####Recursos Adicionales
 
-- Documentación de Java: [Mysql Documentation](https://dev.mysql.com/doc/ "MySQL")
+***Documentación de Java:**[Bucle for en Java](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/for.html)
 
-## Descripción del reto N°2: Insertar datos en la tabla
+## Descripción del reto N°5: TODOList
 
-- Extiende el programa anterior para insertar al menos 3 registros en la tabla `empleados`.
+- Crear un programa que permita al usuario gestionar una lista de tareas. El programa debe permitir al usuario agregar tareas, ver todas las tareas, y eliminar una tarea especíica mediante un menú interactivo que se repita hasta que el usuario decida salir.
 
-### **Instrucciones:**
+### Ejemplo de Entrada/Salida esperada
 
-1. Usa JDBC para insertar datos en la tabla `empleados`.
-2. Asegúrate de manejar las excepciones adecuadamente.
+- Salida:
 
-#### Recursos Adicionales
-
-* Documentación de Java: [Mysql Documentation](https://dev.mysql.com/doc/ "MySQL")
-
-## Descripción del reto N°3: Consultar Datos de la Tabla
-
-- Crea un programa que consulte y muestre todos los registros de la tabla `empleados`.
-
-### **Instrucciones:**
-
-1. Usa JDBC para consultar los datos de la tabla `empleados`.
-2. Muestra los datos en la consola.
+  ```java
+  Selecciona una opción:
+  1. Agregar tarea
+  2. Ver todas las tareas
+  3. Eliminar tarea
+  4. Salir
+  1
+  Ingresa la nueva tarea:
+  Comprar leche
+  Tarea agregada.
+  ```
 
 #### Recursos Adicionales
 
-* Documentación de Java: [Mysql Documentation](https://dev.mysql.com/doc/ "MySQL")
-
-## Descripción del reto N°4: Actualiza los registros
-
-- Crea un programa que actualice el salario de un empleado en la tabla `empleados` basado en su `id`.
-
-### **Instrucciones:**
-
-1. Usa JDBC para actualizar el registro de un empleado.
-2. Pide al usuario el `id` del empleado y el nuevo salario.
-
-
-#### Recursos Adicionales
-
-* Documentación de Java: [Mysql Documentation](https://dev.mysql.com/doc/ "MySQL")
-
-## Descripción del reto N°5: Eliminar un registro
-
-- Crea un programa que elimine un registro de la tabla `empleados` basado en el `id`.
-
-### **Instrucciones:**
-
-1. Usa JDBC para eliminar un registro.
-2. Pide al usuario el `id` del empleado a eliminar.
-
-#### Recursos Adicionales
-
-* Documentación de Java: [Mysql Documentation](https://dev.mysql.com/doc/ "MySQL")
+* **Documentación de Java:**[Clase ArrayList](https://docs.oracle.com/javase/8/docs/api/java/util/ArrayList.html)
 
 ## Evaluación y Feedback
 
@@ -83,9 +140,3 @@
 
 * **Estilo de Código:** Asegúrate de seguir las convenciones de estilo de código Java (nombres de variables, indentación, comentarios).
 * **Comentarios:** Usa comentarios para explicar partes importantes de tu código.
-
-## Consideraciones Adicionales
-
-1. **Configuración del Entorno:** Asegúrate de tener bien configurado el driver de MySQL en tu proyecto (usualmente el archivo `mysql-connector-java.jar`), segun la version de tu MySQL Server.
-2. **Seguridad:** En proyectos reales, es recomendable usar mecanismos de seguridad para manejar las credenciales y las conexiones.
-3. **Validaciones:** Implementa validaciones para asegurar la integridad de los datos y manejar posibles errores de manera adecuada.

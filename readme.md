@@ -1,4 +1,4 @@
-## Consideraciones Adicionales para Contribuir a los Retos Semanales
+## Consideraciones Adicionales para Contribuir a los Retos
 
 ¡Gracias por participar en los retos de algoritmos en Java! Para asegurar una experiencia positiva y educativa, ten en cuenta las siguientes consideraciones al trabajar en tus soluciones y colaborar con otros:
 
@@ -47,3 +47,5 @@
 * **Pruebas:** Si hay scripts de pruebas disponibles, utilízalos para verificar que tu solución cumple con los requisitos antes de enviar tu PR. Esto te ayuda a asegurarte de que tu código funciona correctamente.
 
 > ###### Estas pautas te ayudarán a navegar el proceso de contribución y a sacar el máximo provecho de esta experiencia de aprendizaje. ¡Buena suerte con tus retos semanales y disfruta del proceso de aprendizaje!
+>
+> ###### PARA MAS INFORMACIÓN SOBRE COMO HACER UN FORK DEBES REGISTRARTE EN NUESTRO [DISCORD](https://discord.com/channels/1270347663316877372/1270616070020927589)

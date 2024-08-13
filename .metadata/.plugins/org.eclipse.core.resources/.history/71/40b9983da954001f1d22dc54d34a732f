@@ -1,0 +1,61 @@
+package semana1;
+
+public class _02_Calculadora {
+
+    public static void main(String[] args) {
+        // Crear un objeto Scanner para leer la entrada del usuario
+        Scanner scanner = new Scanner(System.in);
+
+        // Mostrar el menú de opciones
+        System.out.println("Selecciona una operación:");
+        System.out.println("1. Suma");
+        System.out.println("2. Resta");
+        System.out.println("3. Multiplicación");
+        System.out.println("4. División");
+
+        // Leer la opción seleccionada
+        int opcion = scanner.nextInt();
+
+        // Pedir al usuario que ingrese dos números
+        System.out.println("Ingresa el primer número:");
+        double numero1 = scanner.nextDouble();
+        System.out.println("Ingresa el segundo número:");
+        double numero2 = scanner.nextDouble();
+
+        double resultado = 0;
+
+        // Realizar la operación seleccionada
+        switch(opcion) {
+            case 1:
+                // Completa la operación de suma
+                resultado = numero1 + numero2;
+                System.out.println("El resultado de la suma es: " + resultado);
+                break;
+            case 2:
+                // Completa la operación de resta
+                resultado = numero1 - numero2;
+                System.out.println("El resultado de la resta es: " + resultado);
+                break;
+            case 3:
+                // Completa la operación de multiplicación
+                resultado = numero1 * numero2;
+                System.out.println("El resultado de la multiplicación es: " + resultado);
+                break;
+            case 4:
+                // Completa la operación de división
+                if (numero2 != 0) {
+                    resultado = numero1 / numero2;
+                    System.out.println("El resultado de la división es: " + resultado);
+                } else {
+                    System.out.println("Error: División por cero no permitida.");
+                }
+                break;
+            default:
+                System.out.println("Opción no válida.");
+                break;
+        }
+        
+        // Cierra el Scanner
+        scanner.close();
+    }
+}

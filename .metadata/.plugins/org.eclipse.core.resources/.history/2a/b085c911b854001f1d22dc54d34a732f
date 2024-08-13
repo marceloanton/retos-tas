@@ -1,0 +1,63 @@
+package semana1;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class _05_todolist {
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		ArrayList<String> tareas = new ArrayList<>();
+		boolean continuar = true;
+
+		while (continuar) {
+			// Mostrar el menú de opciones
+			System.out.println("Selecciona una opción:");
+			System.out.println("1. Agregar tarea");
+			System.out.println("2. Ver todas las tareas");
+			System.out.println("3. Eliminar tarea");
+			System.out.println("4. Salir");
+
+			// Leer la opción seleccionada
+			int opcion = scanner.nextInt();
+			scanner.nextLine(); // Consumir la nueva línea
+
+			switch (opcion) {
+			case 1:
+				// Agregar una nueva tarea
+				System.out.println("Ingresa la nueva tarea:");
+				String nuevaTarea = scanner.nextLine();
+				tareas.add(nuevaTarea);
+				System.out.println("Tarea agregada.");
+				break;
+			case 2:
+				// Ver todas las tareas
+				System.out.println("Lista de tareas:");
+				for (int i = 0; i < tareas.size(); i++) {
+					System.out.println((i + 1) + ". " + tareas.get(i));
+				}
+				break;
+			case 3:
+				// Eliminar una tarea
+				System.out.println("Ingresa el número de la tarea a eliminar:");
+				int numeroTarea = scanner.nextInt();
+				if (numeroTarea > 0 && numeroTarea <= tareas.size()) {
+					tareas.remove(numeroTarea - 1);
+					System.out.println("Tarea eliminada.");
+				} else {
+					System.out.println("Número de tarea inválido.");
+				}
+				break;
+			case 4:
+				// Salir del programa
+				System.out.println("Saliendo del programa...");
+				continuar = false;
+				break;
+			default:
+				System.out.println("Opción no válida. Inténtalo de nuevo.");
+				break;
+			}
+		}
+
+		scanner.close();
+	}
+}

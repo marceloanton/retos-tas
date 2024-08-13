@@ -1,6 +1,6 @@
 # I.S.F.D y T. N°44 "General Las Heras"
 
-# RETOS SEMANA 1
+# RETOS PARTE 1 - Primer Año
 
 ## Descripción del reto N°1: Saludo Personalizado
 
